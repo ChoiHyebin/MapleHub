@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import background from '../../assets/images/background2.png';
 import logo from '../../assets/images/logo.png';
 
@@ -70,7 +70,6 @@ const Footer = () => {
               ) : (
                 <RiDiscordLine size={50} fill="#FF5C8F" />
               )}
-              {/* <RiDiscordLine size={50} fill="#FF5C8F" /> */}
             </a>
           </li>
           <li
