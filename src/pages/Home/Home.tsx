@@ -1,7 +1,14 @@
 import React from 'react';
 
 const Home: React.FC = () => {
-  return <div>Home</div>;
+  const homeStyle = {
+    padding: '0 150px',
+  };
+  return (
+    <div className="home-container" style={homeStyle}>
+      Home
+    </div>
+  );
 };
 
 export default Home;

@@ -1,0 +1,7 @@
+.footer-icon {
+  transition: 0.4s;
+}
+
+.footer-icon:hover {
+  transform: rotateY(180deg) translateY(-10px);
+}
