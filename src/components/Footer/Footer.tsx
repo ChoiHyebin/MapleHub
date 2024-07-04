@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import background from '../../assets/images/background2.png';
 import logo from '../../assets/images/logo.png';
+import apiLogo from '../../assets/icons/footer_api.svg';
 
 import './Footer.css';
 
@@ -30,35 +31,20 @@ const Footer = () => {
         }}
       />
 
-      <div
-        style={{
-          padding: '30px 150px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '50px',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}
-        >
+      <div className="footer">
+        <div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <img src={logo} width={'300px'} />
             <p>&copy; 2024 all rights reserved</p>
           </div>
-          <p style={{ textAlign: 'right' }}>
-            Data is based on Nexon NexonAPI
+          <p>
+            Data is based on <img src={apiLogo} alt="" />
             <br />
             This site is not an official site of NEXON and does not provide any warranty
           </p>
         </div>
 
-        <ul
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '200px' }}
-        >
+        <ul className="footer-icons">
           <li
             onMouseEnter={() => handleIconHover('discord')}
             onMouseLeave={handleIconLeave}
