@@ -52,9 +52,9 @@ const Footer = () => {
           >
             <a href="">
               {activeIcon === 'discord' ? (
-                <RiDiscordFill size={50} fill="#FF5C8F" />
+                <RiDiscordFill fill="#FF5C8F" />
               ) : (
-                <RiDiscordLine size={50} fill="#FF5C8F" />
+                <RiDiscordLine fill="#FF5C8F" />
               )}
             </a>
           </li>
@@ -65,9 +65,9 @@ const Footer = () => {
           >
             <a href="">
               {activeIcon === 'kakao' ? (
-                <RiKakaoTalkFill size={50} fill="#FF5C8F" />
+                <RiKakaoTalkFill fill="#FF5C8F" />
               ) : (
-                <RiKakaoTalkLine size={50} fill="#FF5C8F" />
+                <RiKakaoTalkLine fill="#FF5C8F" />
               )}
             </a>
           </li>
@@ -78,9 +78,9 @@ const Footer = () => {
           >
             <a href="">
               {activeIcon === 'mail' ? (
-                <HiMail size={50} fill="#FF5C8F" />
+                <HiMail fill="#FF5C8F" />
               ) : (
-                <HiOutlineMail size={50} stroke="#FF5C8F" />
+                <HiOutlineMail stroke="#FF5C8F" />
               )}
             </a>
           </li>

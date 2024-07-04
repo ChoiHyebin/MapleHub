@@ -1,48 +1,49 @@
 import logo from '../../assets/images/logo.png';
+import './Header.css';
+import { IoMenu, IoCall, IoClose } from 'react-icons/io5';
+import { useState } from 'react';
 
-const Header = () => {
-  const headerStyle = {
-    padding: '30px 150px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    fontWeight: 'bold',
-  };
+const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navStyle = {
-    display: 'flex',
-    gap: '50px',
-  };
-
-  const contactBtn = {
-    backgroundColor: '#4FB6FF',
-    color: 'white',
-    padding: '10px',
-    borderRadius: '30px',
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header style={headerStyle}>
+    <header>
       <a href="/">
-        <img src={logo} style={{ width: '200px' }} />
+        <img src={logo} />
       </a>
 
-      <ul style={navStyle}>
-        <li>
-          <a href="">홈</a>
-        </li>
-        <li>
-          <a href="">랭킹</a>
-        </li>
-        <li>
-          <a href="">소식</a>
-        </li>
-        <li>
-          <a href="" style={contactBtn}>
-            Contact Me
+      <nav className="header-nav">
+        <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
+          <li>
+            <a href="">홈</a>
+          </li>
+          <li>
+            <a href="">랭킹</a>
+          </li>
+          <li>
+            <a href="">소식</a>
+          </li>
+        </ul>
+
+        <button className="menu-toggle" onClick={toggleMenu}>
+          {isMenuOpen ? <IoClose fill="white" /> : <IoMenu stroke="white" />}
+        </button>
+
+        <a href="" className="header-contact">
+          Contact Me
+        </a>
+        {isMenuOpen ? (
+          <></>
+        ) : (
+          <a href="" className="header-contact-mini">
+            <IoCall fill="white" />
           </a>
-        </li>
-      </ul>
+        )}
+      </nav>
     </header>
   );
 };
