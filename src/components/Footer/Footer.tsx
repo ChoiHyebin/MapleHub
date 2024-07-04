@@ -8,7 +8,7 @@ import './Footer.css';
 import { RiDiscordLine, RiDiscordFill, RiKakaoTalkLine, RiKakaoTalkFill } from 'react-icons/ri';
 import { HiOutlineMail, HiMail } from 'react-icons/hi';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const [activeIcon, setActiveIcon] = useState<string | null>(null);
 
   const handleIconHover = (icon: string) => {

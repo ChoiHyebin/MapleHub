@@ -4,7 +4,7 @@ import { IoMenu, IoCall, IoClose } from 'react-icons/io5';
 import { useState } from 'react';
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
