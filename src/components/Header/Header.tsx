@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
 
-        <button className="menu-toggle" onClick={toggleMenu}>
+        {/* <button className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? <IoClose fill="white" /> : <IoMenu stroke="white" />}
         </button>
 
@@ -42,7 +42,21 @@ const Header: React.FC = () => {
           <a href="" className="header-contact-mini">
             <IoCall fill="white" />
           </a>
-        )}
+        )} */}
+
+        <button
+          className={`menu-toggle ${isMenuOpen ? 'menu-toggle-clicked' : ''}`}
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? <IoClose fill="white" /> : <IoMenu stroke="white" />}
+        </button>
+
+        <a href="" className="header-contact">
+          Contact Me
+        </a>
+        <a href="" className="header-contact-mini" style={{ opacity: isMenuOpen ? '0' : '1' }}>
+          <IoCall fill="white" />
+        </a>
       </nav>
     </header>
   );

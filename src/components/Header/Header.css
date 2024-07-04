@@ -100,6 +100,11 @@ header > a > img {
   .menu-toggle {
     display: block;
   }
+  .menu-toggle-clicked {
+    transform: translateX(60px);
+    transition: 0.4s;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -132,5 +137,10 @@ header > a > img {
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+  .menu-toggle-clicked {
+    transform: translateX(40px);
+    transition: 0.4s;
+    z-index: 1;
   }
 }
