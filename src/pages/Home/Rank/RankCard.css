@@ -1,0 +1,21 @@
+.rankcard-container {
+  border: 3px solid #ffb66d;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rankcard-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rankcard-container > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

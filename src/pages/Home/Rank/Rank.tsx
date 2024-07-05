@@ -1,5 +1,9 @@
 import RankCard from './RankCard';
 
+import './Rank.css';
+
+import { FaAngleRight } from 'react-icons/fa6';
+
 const Rank: React.FC = () => {
   return (
     <div className="rank-container">
@@ -8,6 +12,10 @@ const Rank: React.FC = () => {
       <div className="rank-list">
         <RankCard />
       </div>
+
+      <a href="">
+        랭킹 더 보기 <FaAngleRight fill="#4FB6FF" />
+      </a>
     </div>
   );
 };
