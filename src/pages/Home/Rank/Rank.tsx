@@ -15,7 +15,7 @@ const Rank: React.FC = () => {
           'https://open.api.nexon.com/maplestory/v1/ranking/overall',
           {
             headers: {
-              'x-nxopen-api-key': '',
+              'x-nxopen-api-key': import.meta.env.VITE_NEXON_API_KEY,
             },
             params: {
               date: currentDate,
