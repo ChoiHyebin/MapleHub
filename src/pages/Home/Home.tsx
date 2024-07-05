@@ -1,6 +1,6 @@
 import React from 'react';
-import Search from './Search';
-import Rank from './Rank';
+import Search from './Search/Search';
+import Rank from './Rank/Rank';
 
 const Home: React.FC = () => {
   return (
