@@ -1,12 +1,12 @@
 import React from 'react';
 import Search from './Search';
+import Rank from './Rank';
 
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      <div>
-        <Search />
-      </div>
+      <Search />
+      <Rank />
     </div>
   );
 };

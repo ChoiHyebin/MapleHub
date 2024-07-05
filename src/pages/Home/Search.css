@@ -50,4 +50,7 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
