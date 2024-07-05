@@ -4,6 +4,11 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+}
+
+.world-img {
+  width: 20px;
 }
 
 .rankcard-container > div {
@@ -11,21 +16,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
-.rankcard-container > div > div {
+.rankcard-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.rankcard-container > div > div > p:nth-of-type(2) {
+.rankcard-info > p > b {
+  font-size: 18px;
+}
+.rankcard-info > p > span {
+  font-size: 12px;
+}
+.rankcard-info > p:nth-of-type(2) {
   text-align: right;
 }
-.rankcard-container > div > div > p:nth-of-type(2) > b,
-.rankcard-container > div > div > p:nth-of-type(2) > span {
+.rankcard-info > p:nth-of-type(2) > b,
+.rankcard-info > p:nth-of-type(2) > span {
   color: #e64c4c;
-}
-.rankcard-container > div > div > p > span {
-  font-size: 12px;
 }
