@@ -15,6 +15,6 @@
   color: #4fb6ff;
   padding: 10px 20px;
   font-weight: bold;
-  transition: all 150ms ease-in-out;
-  position: relative;
+  width: 200px;
+  align-self: center;
 }
