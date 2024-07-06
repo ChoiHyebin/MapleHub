@@ -1,0 +1,20 @@
+.event-container {
+  padding: 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-container > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #4fb6ff;
+  color: #4fb6ff;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 200px;
+  align-self: center;
+}
