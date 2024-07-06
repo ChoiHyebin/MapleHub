@@ -1,3 +1,10 @@
+footer > img {
+  width: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  filter: contrast(50%);
+}
+
 .footer {
   padding: 30px 150px;
   display: flex;
@@ -56,6 +63,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  footer > img {
+    aspect-ratio: 3/2;
+  }
+
   .footer {
     padding: 30px;
   }

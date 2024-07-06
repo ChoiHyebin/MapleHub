@@ -51,6 +51,9 @@
   width: 20px;
   aspect-ratio: 1/1;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -61,6 +64,9 @@
   width: 20px;
   aspect-ratio: 1/1;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -72,4 +78,21 @@
 }
 .character-info > img {
   width: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .rankbox-container > h3 {
+    font-size: 15px;
+  }
+
+  .rankbox-container > div {
+    grid-template-columns: repeat(4, minmax(40px, 1fr));
+  }
+
+  .rankbox-container > div > p {
+    font-size: 12px;
+  }
+  .rank-popularity {
+    display: none;
+  }
 }

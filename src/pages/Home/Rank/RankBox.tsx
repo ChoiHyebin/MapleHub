@@ -29,7 +29,7 @@ const RankBox: React.FC<RankBoxProps> = ({ title, rankData, worldImages }) => {
         <p className="rank-head">이름</p>
         <p className="rank-head">레벨</p>
         <p className="rank-head">직업</p>
-        <p className="rank-head">인기도</p>
+        <p className="rank-head rank-popularity">인기도</p>
 
         {rankData.map((rank, index) => (
           <React.Fragment key={index}>
@@ -54,7 +54,7 @@ const RankBox: React.FC<RankBoxProps> = ({ title, rankData, worldImages }) => {
             </p>
             <p>{rank.character_level}</p>
             <p>{rank.class_name}</p>
-            <p>{rank.character_popularity}</p>
+            <p className="rank-popularity">{rank.character_popularity}</p>
           </React.Fragment>
         ))}
       </div>

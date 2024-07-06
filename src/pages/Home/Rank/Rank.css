@@ -40,3 +40,23 @@
 /* .rank-list > div:hover {
   box-shadow: 0 5px 8px -4px lightgray;
 } */
+
+@media screen and (max-width: 1000px) {
+  .rank-container {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .rank-container {
+    padding: 50px 30px;
+  }
+
+  .rank-list {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}

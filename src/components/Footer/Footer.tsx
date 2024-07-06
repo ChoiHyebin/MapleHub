@@ -21,15 +21,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer style={{ backgroundColor: '#F5EBEB' }}>
-      <img
-        src={background}
-        style={{
-          width: '100%',
-          aspectRatio: '3/1',
-          objectFit: 'cover',
-          filter: 'contrast(50%)',
-        }}
-      />
+      <img src={background} />
 
       <div className="footer">
         <div>
