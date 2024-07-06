@@ -19,23 +19,24 @@
   align-self: center;
 }
 
+/* .rank-list {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+} */
 .rank-list {
   flex-wrap: wrap;
   display: grid;
   flex: none;
   gap: 20px;
   grid-auto-rows: min-content;
-  grid-template-columns: repeat(5, minmax(40px, 1fr));
+  grid-template-columns: repeat(2, minmax(40px, 1fr));
   grid-template-rows: repeat(2, min-content);
   height: auto;
   justify-content: center;
   width: 100%;
   height: auto;
 }
-.rank-list > div {
-  cursor: pointer;
-  border-radius: 20px;
-}
-.rank-list > div:hover {
+/* .rank-list > div:hover {
   box-shadow: 0 5px 8px -4px lightgray;
-}
+} */
