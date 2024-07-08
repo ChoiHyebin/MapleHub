@@ -5,6 +5,15 @@ import cors from 'cors';
 const app = express();
 const port = 3001; // 포트를 3001번으로 변경
 
+// CORS 정책 설정
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  })
+);
+
 app.get('/events', async (req, res) => {
   try {
     const browser = await puppeteer.launch();
