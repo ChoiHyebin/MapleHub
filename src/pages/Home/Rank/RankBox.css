@@ -20,15 +20,15 @@
 .rank-head {
   background-color: #eeeeee;
 }
-.rankbox-container > div > p {
+.rankbox-container > div > div {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #dad6d6;
 }
-.rankbox-container > div > p:nth-last-child(-n + 5) {
+.rankbox-container > div > div:nth-last-child(-n + 5) {
   border-bottom: none;
 }
-.rankbox-container > div > p:nth-of-type(2) {
+.rankbox-container > div > div:nth-of-type(2) {
   text-align: left;
 }
 
@@ -89,7 +89,7 @@
     grid-template-columns: repeat(4, minmax(40px, 1fr));
   }
 
-  .rankbox-container > div > p {
+  .rankbox-container > div > div {
     font-size: 12px;
   }
   .rank-popularity {

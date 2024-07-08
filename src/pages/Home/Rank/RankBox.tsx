@@ -25,16 +25,16 @@ const RankBox: React.FC<RankBoxProps> = ({ title, rankData, worldImages }) => {
       <h3>{title}</h3>
 
       <div>
-        <p className="rank-head">순위</p>
-        <p className="rank-head">이름</p>
-        <p className="rank-head">레벨</p>
-        <p className="rank-head">직업</p>
-        <p className="rank-head rank-popularity">인기도</p>
+        <div className="rank-head">순위</div>
+        <div className="rank-head">이름</div>
+        <div className="rank-head">레벨</div>
+        <div className="rank-head">직업</div>
+        <div className="rank-head rank-popularity">인기도</div>
 
         {rankData.map((rank, index) => (
           <React.Fragment key={index}>
-            <p>
-              <div
+            <div>
+              <p
                 className={`rank-num ${
                   rank.ranking === 1
                     ? 'rank-1'
@@ -46,15 +46,15 @@ const RankBox: React.FC<RankBoxProps> = ({ title, rankData, worldImages }) => {
                 }`}
               >
                 {rank.ranking}
-              </div>
-            </p>
-            <p className="character-info">
+              </p>
+            </div>
+            <div className="character-info">
               <img src={worldImages[rank.world_name]} alt={rank.world_name} />
               <p>{rank.character_name}</p>
-            </p>
-            <p>{rank.character_level}</p>
-            <p>{rank.class_name}</p>
-            <p className="rank-popularity">{rank.character_popularity}</p>
+            </div>
+            <div>{rank.character_level}</div>
+            <div>{rank.class_name}</div>
+            <div className="rank-popularity">{rank.character_popularity}</div>
           </React.Fragment>
         ))}
       </div>

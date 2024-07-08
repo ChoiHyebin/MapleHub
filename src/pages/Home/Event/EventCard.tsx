@@ -1,19 +1,25 @@
 import React from 'react';
-
 import './EventCard.css';
-
 import { FaCalendarAlt } from 'react-icons/fa';
 
-const EventCard = () => {
+interface EventCardProps {
+  imgUrl: string;
+  title: string;
+  period: string;
+}
+
+const EventCard = ({ imgUrl, title, period }: EventCardProps) => {
   return (
     <div className="eventcard-container">
-      <div>이벤트 이미지</div>
+      <div>
+        <img src={imgUrl} alt="Event" />
+      </div>
 
       <div>
-        <h3>이벤트 이름</h3>
+        <h3>{title}</h3>
         <p>
           <FaCalendarAlt />
-          이벤트 기간
+          {period}
         </p>
       </div>
     </div>
