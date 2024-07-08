@@ -6,14 +6,15 @@ interface EventCardProps {
   imgUrl: string;
   title: string;
   period: string;
+  eventUrl: string;
 }
 
-const EventCard = ({ imgUrl, title, period }: EventCardProps) => {
+const EventCard = ({ imgUrl, title, period, eventUrl }: EventCardProps) => {
   return (
     <div className="eventcard-container">
-      <div>
+      <a href={eventUrl}>
         <img src={imgUrl} alt="Event" />
-      </div>
+      </a>
 
       <div>
         <h3>{title}</h3>

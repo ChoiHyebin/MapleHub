@@ -7,6 +7,7 @@ interface EventData {
   imgUrl: string;
   title: string;
   period: string;
+  eventUrl: string;
 }
 
 const Event: React.FC = () => {
@@ -31,7 +32,13 @@ const Event: React.FC = () => {
 
       <div className="event-list">
         {events.map((event, index) => (
-          <EventCard key={index} imgUrl={event.imgUrl} title={event.title} period={event.period} />
+          <EventCard
+            key={index}
+            imgUrl={event.imgUrl}
+            title={event.title}
+            period={event.period}
+            eventUrl={event.eventUrl}
+          />
         ))}
       </div>
 
