@@ -3,13 +3,44 @@
   background-color: #f7f5f5;
   border-radius: 10px;
 }
-
-.eventcard-container > div {
-  padding: 20px;
+.eventcard-container:hover {
+  box-shadow: 0 5px 10px -4px lightgray;
 }
-.eventcard-container > div > p {
+
+.eventcard-container > a > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.eventcard-container > a > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.eventcard-container > a > div > p {
   display: flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
+}
+.calendar-icon {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .eventcard-container > a > div {
+    padding: 10px;
+  }
+
+  .eventcard-container > a > div > h3 {
+    font-size: 16px;
+  }
+  .eventcard-container > a > div > p {
+    font-size: 12px;
+  }
+  .calendar-icon {
+    font-size: 15px;
+  }
 }

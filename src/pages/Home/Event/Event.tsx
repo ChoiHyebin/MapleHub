@@ -42,8 +42,8 @@ const Event: React.FC = () => {
         ))}
       </div>
 
-      <a href="">
-        랭킹 더 보기 <FaAngleRight fill="#4FB6FF" />
+      <a href="https://maplestory.nexon.com/News/Event">
+        소식 더 보기 <FaAngleRight fill="#4FB6FF" />
       </a>
     </div>
   );

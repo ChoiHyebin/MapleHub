@@ -27,7 +27,7 @@ app.get('/events', async (req, res) => {
       eventList.forEach((event) => {
         const imgUrl = event.querySelector('dt > a > img').src;
         const title = event.querySelector('dd > p > a').textContent || '';
-        const period = event.querySelector('dd > p').textContent || '';
+        const period = event.querySelector('.date > p').textContent || '';
         const eventUrl = event.querySelector('dt > a').href || '';
 
         eventData.push({ imgUrl, title, period, eventUrl });

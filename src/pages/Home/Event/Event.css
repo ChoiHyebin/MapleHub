@@ -18,3 +18,40 @@
   width: 200px;
   align-self: center;
 }
+
+.event-list {
+  display: grid;
+  flex: none;
+  gap: 20px;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(3, minmax(40px, 1fr));
+  grid-template-rows: repeat(2, min-content);
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .event-container {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event-container {
+    padding: 50px 30px;
+  }
+
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .event-container > a {
+    width: 100%;
+  }
+}

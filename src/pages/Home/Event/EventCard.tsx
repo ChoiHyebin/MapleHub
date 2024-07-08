@@ -1,6 +1,5 @@
-import React from 'react';
 import './EventCard.css';
-import { FaCalendarAlt } from 'react-icons/fa';
+import { CiCalendar } from 'react-icons/ci';
 
 interface EventCardProps {
   imgUrl: string;
@@ -14,15 +13,15 @@ const EventCard = ({ imgUrl, title, period, eventUrl }: EventCardProps) => {
     <div className="eventcard-container">
       <a href={eventUrl}>
         <img src={imgUrl} alt="Event" />
-      </a>
 
-      <div>
-        <h3>{title}</h3>
-        <p>
-          <FaCalendarAlt />
-          {period}
-        </p>
-      </div>
+        <div>
+          <h3>{title}</h3>
+          <p>
+            <CiCalendar className="calendar-icon" />
+            {period}
+          </p>
+        </div>
+      </a>
     </div>
   );
 };
