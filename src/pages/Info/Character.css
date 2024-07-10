@@ -1,0 +1,44 @@
+.char-container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 8px -4px gray;
+}
+
+.char-img {
+  background-image: url('../../assets/images/info-back.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.char-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.char-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.char-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.char-recent {
+  font-size: 13px;
+}
+
+.char-name {
+  font-size: 20px;
+  color: navy;
+}

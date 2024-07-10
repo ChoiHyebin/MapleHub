@@ -1,0 +1,15 @@
+.info-container {
+  background-color: #f9f9fb;
+  padding: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-container > a {
+  display: flex;
+  align-items: center;
+}
+.info-container > a:hover {
+  color: black;
+}
