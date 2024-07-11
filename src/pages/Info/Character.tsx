@@ -20,7 +20,7 @@ const Character: React.FC = () => {
         <div>
           <div className="char-flex">
             <b className="char-name">캐릭터명</b>
-            <p>스카니아</p>
+            <p className="char-world">월드명</p>
           </div>
 
           <div className="char-flex">

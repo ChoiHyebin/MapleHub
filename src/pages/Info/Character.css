@@ -42,3 +42,9 @@
   font-size: 20px;
   color: navy;
 }
+.char-world {
+  background-color: #f7f0f0;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}

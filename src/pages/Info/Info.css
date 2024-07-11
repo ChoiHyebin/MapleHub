@@ -6,10 +6,13 @@
   gap: 20px;
 }
 
-.info-container > a {
+.info-container > p {
+  display: flex;
+}
+.info-container > p > a {
   display: flex;
   align-items: center;
 }
-.info-container > a:hover {
+.info-container > p > a:hover {
   color: black;
 }
